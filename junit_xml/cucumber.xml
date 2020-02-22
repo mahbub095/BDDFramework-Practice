@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.345055">
+    <testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="16.345055">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at step_def.LoginStepDefinition.title_of_login_page_is_Free_CRM(LoginStepDefinition.java:30)&#13;&#10;&#9;at ✽.When title of login page is Free CRM(D:/Cucumber/BDDFramework/src/main/java/Features/login.feature:6)&#13;&#10;">
+            <![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Free CRM........................................failed
+Then user enters "<username>" and "<password>"..............................skipped
+Then user clicks on login button............................................skipped
+Then user is on home page...................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at step_def.LoginStepDefinition.title_of_login_page_is_Free_CRM(LoginStepDefinition.java:30)
+	at ✽.When title of login page is Free CRM(D:/Cucumber/BDDFramework/src/main/java/Features/login.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
