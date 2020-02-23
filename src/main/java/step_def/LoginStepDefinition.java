@@ -33,6 +33,8 @@ public class LoginStepDefinition {
 	 }
 	 
 	 @Then("^user enters \"(.*)\" and \"(.*)\"$")
+	// @Then("^user enters username and password$")
+	  
 	 public void user_enters_username_and_password(String username, String password){
 	 driver.findElement(By.name("email")).sendKeys(username);
 	 driver.findElement(By.name("password")).sendKeys(password);
@@ -51,6 +53,20 @@ public class LoginStepDefinition {
 	 String title = driver.getTitle();
 	 System.out.println("Home Page title ::"+ title);
 	 Assert.assertEquals("CRMPRO", title);
+	 }
+	 
+	 @Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+	 public void user_enters_contacts_details(String firstname, String lastname, String position){
+		 driver.findElement(By.id("first_name")).sendKeys(firstname);
+		 driver.findElement(By.id("surname")).sendKeys(lastname);
+		 driver.findElement(By.id("company_position")).sendKeys(position);
+		 driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
+	 }
+	 
+
+	 @Then("^Close the browser$")
+	 public void close_the_browser(){
+		 driver.quit();
 	 }
 	 
 }
