@@ -20,7 +20,7 @@ public class LoginStepDefinition {
 	 
 			System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();	
-			driver.get("https://www.freecrm.com/index.html");
+			driver.get("https://freecrm.com/index.html");
 		 
 
 	 }
