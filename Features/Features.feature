@@ -1,6 +1,6 @@
-Feature: Test Twitter smoke scenario
+Feature: Test Ecommerce smoke scenario
 
-Scenario: Test login with valid credentials
+Scenario: Test Order
 Given Open the Chorom and start application
-When Enter the Username and Password
-Then  user should be able to login successfully
+When Enter login and order
+Then  user should be able to Order successfully
